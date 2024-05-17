@@ -1,0 +1,12 @@
+h1 {
+
+    font-size: clamp(1rem, 3vw + 0.5rem, 4rem);
+    text-align: center;
+	text-transform: uppercase;
+	font-style: italic;
+	font-family: "Geist Mono", monospace;
+	font-weight: 1000;
+
+    color : #1A4D2E;
+
+}

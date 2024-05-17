@@ -1,0 +1,47 @@
+.TodoItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Geist Mono", monospace;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.3s;
+}
+
+.TodoItem:hover {
+    background-color: #f9f9f9;
+}
+
+.TodoItem-p {
+    margin: 24px 0 24px 24px;
+    width: calc(100% - 120px);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: auto;
+}
+
+.TodoItem-p--complete {
+    text-decoration: line-through;
+}
+
+.Icon-check {
+    left: 12px;
+}
+
+.Icon-check--active {
+    color: #4caf50;
+}
+
+.Icon-delete {
+    top: -24px;
+    right: 0;
+}
+
+.Icon-delete:hover {
+    color: red;
+}
+
+
+
+
+

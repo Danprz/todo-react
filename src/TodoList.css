@@ -1,0 +1,12 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 100;
+    height: 350px;
+    width: auto;
+    overflow: auto;
+  }
+
+  [data-scroll-snap=true] ul {
+    scroll-snap-type: y mandatory; 
+  }

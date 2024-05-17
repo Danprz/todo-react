@@ -1,0 +1,21 @@
+.TodoSearch {
+	font-family: "Geist Mono", monospace;
+	font-size: 1.75rem;
+	padding: 1rem 10rem;
+    padding-right: 4rem;
+	width: calc(80% - 30px);
+	text-align: center;
+	letter-spacing: 0.1ch;
+	border-radius: 12px;
+	color: var(--color-alpha);
+	border-color: var(--color-alpha);
+	border-style: solid;
+	background: var(--input-bg);
+	transition: border-color 0.2s, color 0.2s;
+
+
+}
+
+.TodoSearch:focus {
+	outline-color: #4F6F52;
+}
