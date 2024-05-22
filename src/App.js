@@ -6,18 +6,6 @@ import { TodoItem } from './TodoItem';
 import { CreateTodoButton } from './CreateTodoButton';
 import './App.css';
 
-/* const defaultTodos = [
-{text: 'Verificar la MAJ de la base de datos', completed: true},
-{text: 'Observar los rendimientos de la semana pasada', completed: false},
-{text: 'Optimizar los archivos excel', completed: false},
-{text: 'Escribir codigo para crear paginas web', completed: false},
-{text: 'Terminar el curso de React', completed: false}
-];
-
-
-localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos));
-localStorage.removeItem('TODOS_V1') */
-
 function useLocalStorage(itemName, initialValue) {
 
   const localStorageItem =  localStorage.getItem(itemName);
@@ -42,8 +30,7 @@ function useLocalStorage(itemName, initialValue) {
 };
 
 function App() {
-
- 
+  
   const[todos, saveTodos] = useLocalStorage('TODOS_V1', []);
   const[searchValue, setSearchValue] = React.useState('');
 
