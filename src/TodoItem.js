@@ -1,17 +1,22 @@
 import './TodoItem.css'
+import { TiTick } from "react-icons/ti";
+import { TiTrash } from "react-icons/ti";
 
 function TodoItem(props) {
   return (
     <li className='TodoItem'>
-      <span className={`Icon Icon-check ${props.completed && "Icon-check--active" }`}>
+      <TiTick  className={`Icon Icon-check ${props.completed 
+        && "Icon-check--active" }`}
+        onClick={props.onComplete}
+      >
         V
-      </span>
+      </TiTick >
       <p className={`TodoItem-p  ${props.completed && "TodoItem-p--complete" }`}>
         {props.text}
       </p>
-      <span className='Icon Icon-delete'>
+      <TiTrash className='Icon Icon-delete' onClick={props.onDelete}>
         X
-      </span>
+      </TiTrash>
     </li>
   );
 }

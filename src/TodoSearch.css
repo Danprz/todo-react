@@ -1,9 +1,9 @@
 .TodoSearch {
 	font-family: "Geist Mono", monospace;
 	font-size: 1.75rem;
-	padding: 1rem 10rem;
-    padding-right: 4rem;
-	width: calc(80% - 30px);
+	margin: 0 24px;
+	height: 64px;
+	width: calc(100% - 62px);
 	text-align: center;
 	letter-spacing: 0.1ch;
 	border-radius: 12px;

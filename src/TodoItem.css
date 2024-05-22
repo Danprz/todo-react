@@ -26,6 +26,8 @@
 
 .Icon-check {
     left: 12px;
+    font-size: 45px;
+    color: #524C42;
 }
 
 .Icon-check--active {
@@ -33,8 +35,10 @@
 }
 
 .Icon-delete {
-    top: -24px;
+ 
     right: 0;
+    font-size: 35px;
+    color: #524C42;
 }
 
 .Icon-delete:hover {
