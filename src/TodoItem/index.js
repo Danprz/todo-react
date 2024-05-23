@@ -9,13 +9,13 @@ function TodoItem(props) {
         && "Icon-check--active" }`}
         onClick={props.onComplete}
       >
-        V
+        
       </TiTick >
       <p className={`TodoItem-p  ${props.completed && "TodoItem-p--complete" }`}>
         {props.text}
       </p>
       <TiTrash className='Icon Icon-delete' onClick={props.onDelete}>
-        X
+        
       </TiTrash>
     </li>
   );
