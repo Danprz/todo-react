@@ -5,6 +5,7 @@ import { TodoList } from '../TodoList';
 import { TodoItem } from '../TodoItem';
 import { TodosLoading } from '../TodosLoading';
 import { TodosError } from '../TodosError';
+import { TodoForm } from '../TodoForm';
 import { EmptyTodos } from '../EmptyTodos';
 import { CreateTodoButton } from '../CreateTodoButton';
 import { Modal } from '../Modal';
@@ -20,6 +21,7 @@ function AppUI() {
     openModal,
     setOpenModal,
   } = React.useContext(TodoContext)
+
   return (
     <>
       <TodoCounter />
@@ -51,11 +53,13 @@ function AppUI() {
         )}
       </TodoContext.Consumer>
       
-      <CreateTodoButton />
+      <CreateTodoButton 
+        setOpenModal={setOpenModal}
+      />
 
       {openModal && (
         <Modal>
-          La funcionalidad de crear todos
+          <TodoForm/>
         </Modal>
       )}
     </>

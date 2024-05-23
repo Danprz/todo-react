@@ -11,6 +11,7 @@
     font-size: 1.25rem;
     transition: background 0.2s;
     cursor: pointer;
+    z-index: 1;
   }
   
 
