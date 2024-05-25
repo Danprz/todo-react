@@ -7,7 +7,7 @@ function TodosError({
 }) {
     
     return (
-      <p>Algo</p>
+      <p>Error</p>
     );
   }
 

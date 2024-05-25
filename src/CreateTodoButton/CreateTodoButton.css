@@ -1,21 +1,27 @@
 .CreateTodoButton {
-    border: 4px solid #4F6F52;
-    font-family: "Geist Mono", monospace;
-    background: transparent;
-    padding: 1rem 2rem;
-    border-radius: 100px;
-    margin-right: auto;
-    width: calc(40% );
-    color: black;
-    font-weight: bold;
-    font-size: 1.25rem;
-    transition: background 0.2s;
-    cursor: pointer;
-    z-index: 1;
-  }
-  
+  border: 4px solid #4F6F52;
+  font-family: "Geist Mono", monospace;
+  background: transparent;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: background 0.2s, transform 0.2s;
+  cursor: pointer;
+  z-index: 1;
+  bottom: auto;
+  left: auto;
+  box-shadow: 0px 5px 25px rgba( 79, 111, 82, 0.5);
+}
 
-  .CreateTodoButton:hover {
-    background: #E8DFCA;
-    transform: scale(2);
-  }
+.CreateTodoButton:hover {
+  background: #E8DFCA;
+  transform: scale(1.2);
+
+}
+

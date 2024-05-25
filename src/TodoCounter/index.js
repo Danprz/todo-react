@@ -13,10 +13,10 @@ function TodoCounter() {
   return (
     completedTodos === totalTodos ? (
       <h1 className='TodoCounter'>
-        IT'S DONE !!!
+        You have 0/0 tasks to do !
       </h1>) : (
       <h1 className='TodoCounter'>
-        Has completado <span>{completedTodos}</span> de <span>{totalTodos}</span> tasks
+        You have <span>{totalTodos-completedTodos}</span>/<span>{totalTodos}</span> tasks to do !
       </h1>)
   );
 }

@@ -1,4 +1,5 @@
 import './CreateTodoButton.css';
+import { HiPencilAlt } from "react-icons/hi";
 
 function CreateTodoButton({ setOpenModal }) {
   return (
@@ -9,7 +10,7 @@ function CreateTodoButton({ setOpenModal }) {
           setOpenModal(state => !state);
         }
       }
-    >New Task !</button>
+    ><HiPencilAlt /></button>
   );
 }
 export { CreateTodoButton };
