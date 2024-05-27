@@ -10,7 +10,7 @@ function CreateTodoButton({ setOpenModal }) {
           setOpenModal(state => !state);
         }
       }
-    ><HiPencilAlt /></button>
+    ><HiPencilAlt className='icon' /></button>
   );
 }
 export { CreateTodoButton };
